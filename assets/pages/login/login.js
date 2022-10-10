@@ -25,7 +25,7 @@ const app = {
                         localStorage.setItem('rfstkn', JSON.stringify(data.refresh_token));
                         localStorage.setItem('user_id', JSON.stringify(data.user_id));
 
-                        window.location.href = '/'
+                        history.back();
                     }
                 })
         })
