@@ -13,7 +13,7 @@ const appHeader = {
             .then(res => res.json())
             .then(data => {
                 if (data.is_expired || !userId || !acstkn) {
-                    const html = `<a href="/assets/pages/login/login.html" class="header__login-btn">
+                    const html = `<a href="./assets/pages/login/login.html" class="header__login-btn">
                                     <i class="fa-solid fa-arrow-right-to-bracket header__login-icon"></i>
                                     Login
                                 </a>`
