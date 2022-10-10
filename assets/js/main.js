@@ -13,7 +13,7 @@ const closeBtn = s$('.modal__close-btn')
 const app = {
     handleCallApi() {
         const _this = this;
-        fetch(`${API_URL || API_URL_BACK_UP}/api/all-videos`, {
+        fetch(`${API_URL_BACK_UP}/api/all-videos`, {
             headers: {
                 authorization: `Beaer ${acstkn}`
             }

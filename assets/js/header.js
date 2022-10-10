@@ -5,7 +5,7 @@ const appHeader = {
         const userId = JSON.parse(localStorage.getItem('user_id'));
         const acstkn = JSON.parse(localStorage.getItem('acstkn'));
 
-        fetch(`${API_URL || API_URL_BACK_UP}/api/user/${userId}`, {
+        fetch(`${API_URL_BACK_UP}/api/user/${userId}`, {
             headers: {
                 authorization: `Beaer ${acstkn}`
             }
@@ -22,7 +22,7 @@ const appHeader = {
                 };
                 const html = `<h4 class="logout-btn">Log out</h4>
                               <h4>${data.name}</h4>
-                              <img class="avatar" src="${API_URL || API_URL_BACK_UP}${data.avatar}" alt="avatar" />`;
+                              <img class="avatar" src="${API_URL_BACK_UP}${data.avatar}" alt="avatar" />`;
                 $('.header__auth').html(html);
                 $('.logout-btn').click(() => {
                     localStorage.removeItem("user_id");
