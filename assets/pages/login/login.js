@@ -6,7 +6,7 @@ const app = {
             const usernameValue = $('.username-input').val();
             const passwordValue = $('.password-input').val();
 
-            fetch(`${API_URL}/auth/login`, {
+            fetch(`${API_URL || API_URL_BACK_UP}/auth/login`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
